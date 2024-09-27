@@ -30,7 +30,7 @@ for i in range(1, len(profits)):
   profitchanges.append(change)
 
 #Calculate average profit/loss changes
-average_change = sum(profitchanges / len(profitchanges)
+averagechange = sum(profitchanges / len(profitchanges)
 
 #Calculate greatest increase/decrease and months
 greatestincrease = max(profitchanges)
