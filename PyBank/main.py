@@ -46,10 +46,10 @@ print("----------------------------")
 #Print total nmber of months included in the dataset
 print(f"Total Months: {totalmonths}")
 #Print the net total amount of Profit/Losses column over entire period                     
-print(f"Total" ${totalprofit}")
+print(f"Total" ${totalprofits}")
 
 #Print the changes in Profit/Losses colum over entire period and the average of those changes
-print(f"Average Change: ${totalprofit}")
+print(f"Average Change: ${totalprofits}")
 
 #Print the greatest increase in profits with date and amount over the entire period
 print(f"Greatest Increase in Profits: {greatestincreasemonth} (${greatestincrease})")
