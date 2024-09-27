@@ -22,7 +22,7 @@ with open(csv_file, mode='r') as file:
 
 #Set functions
 totalmonths = len(months)
-totalprofit = sum(profits)
+totalprofits = sum(profits)
 
 #Calcluate profit/loss changes
 for i in range(1, len(profits)):
