@@ -59,9 +59,24 @@ with open(file_to_output, "w") as txt_file:
         print(f"{candidate}: {vote_percentage:.3f}% ({votes})")
         txt_file.write(f"{candidate}: {vote_percentage:.3f}% ({votes})\n")
 
-    # Generate and print the winning candidate summary
-    winning_summary = f"Winner: {winning_candidate}\nWinning Vote Count: {winning_count}\nWinning Percentage: {(winning_count / total_votes) * 100:.3f}%"
-    print(winning_summary)
-    txt_file.write(f"\n{winning_summary}\n")
+    # Generate the winning candidate summary
+    winning_summary = (
+        f"\nElection Results\n"
+        f"---------------------------\n"
+        f"Total Votes: {total_votes}\n"
+        f"---------------------------\n"
+        f"Winner: {winning_candidate}\n"
+        f"Winning Vote Count: {winning_count}\n"
+        f"Winning Percentage: {(winning_count / total_votes) * 100:.3f}%\n"
+        f"---------------------------\n"
+    )
+
+# Print the output
+print(winning_summary)
+
+# Write the results to a text file
+with open(file_to_output, "a") as txt_file:  # Append the winning summary
+    txt_file.write(winning_summary)
+
 
   
